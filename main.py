@@ -7,7 +7,8 @@ import rssreader
 filename = 'myrss'
 path = os.getcwd()
 filepath = 'file://' + path + '/' + filename + '.html'
-feed_url = 'https://www.heise.de/newsticker/heise-top-atom.xml'
+#feed_url = 'https://www.heise.de/newsticker/heise-top-atom.xml'
+feed_url = 'https://www.heise.de/newsticker/heise.rdf'
 
 #read feeds
 rss_raw = rssreader.read_feeds(feed_url)

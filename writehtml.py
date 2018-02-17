@@ -7,7 +7,7 @@ def create_html(filename, data):
 """
     body = ''
     for p in data:
-        body += """<p>""" + p + """</p>"""
+        body += """<p>""" + p[0] + """<br />""" + p[1] + """</p>"""
 
     footer = """
 </body>
