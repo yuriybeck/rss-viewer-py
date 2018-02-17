@@ -1,13 +1,18 @@
-def create_html(filename):
+def create_html(filename, data):
     f = open(filename + '.html', 'w')
 
-    message = """<html>
+    header = """<html>
 <head></head>
 <body>
-    <p>Hello World!</p>
+"""
+    body = ''
+    for p in data:
+        body += """<p>""" + p + """</p>"""
+
+    footer = """
 </body>
 </html>
 """
-    f.write(message)
+    f.write(header + body + footer)
     f.close()
     return
